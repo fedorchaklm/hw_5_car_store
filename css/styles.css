@@ -1,0 +1,72 @@
+/* 1 */
+html {
+  font-size: 16px;
+}
+
+/* 1 */
+body {
+  font-size: 1rem;
+  line-height: 1;
+  margin: 40px auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 1 */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 1 */
+fieldset {
+  width: 20%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  font-size: 1.2rem;
+  border: 2px solid rgb(140, 200, 222);
+}
+
+/* 1 */
+legend {
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: rgb(140, 200, 222);
+}
+
+/* 10 */
+.field-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* 1 */
+input {
+  border-radius: 4px;
+  padding: 10px;
+  border: 2px solid rgb(140, 200, 222);
+}
+
+/* 11 */
+input:hover {
+  border: 1px solid black;
+}
+
+/* 10 */
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+/* 11 */
+.btn-wrap > input {
+  padding: 10px 20px;
+  border-radius: 4px;
+  background: rgb(140, 200, 222);
+  font-weight: 700;
+  cursor: pointer;
+}
