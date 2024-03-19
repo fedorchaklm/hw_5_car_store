@@ -16,26 +16,44 @@
         <legend>SIGN UP</legend>
         <div class="field-block">
           <label for="email">Email: </label>
-          <input type="email" name="email" id="email" placeholder="example@gmail.com" required="required"
-            autocomplete="off" title="Введіть існуючу електронну адресу" />
+          <input 
+          type="email" 
+          name="email" 
+          id="email" 
+          placeholder="example@gmail.com" 
+          required="required"
+          autocomplete="off" 
+          title="Введіть існуючу електронну адресу" 
+          pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" />
         </div>
         <div class="field-block">
           <label for="password">Password: </label>
-          <input type="password" name="password" id="password" required="required" />
+          <input 
+            type="password" 
+            name="password" 
+            id="password" 
+            required="required"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Пароль повинен містити хоча б одну велику та малу літери. &#013; Мінімальна довжина паролю 8 символів." />
         </div>
         <div class="field-block-remember">
-          <input type="checkbox" name="remember_password" id="remember_password" checked placeholder="example@gmail.com"
-            required="required" />
-          <label for="remember_password">Запам'ятати мене </label>
+          <input 
+          type="checkbox" 
+          name="remember" 
+          id="remember" 
+          checked 
+          placeholder="example@gmail.com"
+          required="required" />
+          <label for="remember">Запам'ятати мене </label>
         </div>
         <div class="btn-wrap">
-          <input type="submit" name="submit" value="SIGN UP" />
+          <input 
+          type="submit" 
+          value="SIGN UP" />
         </div>
       </fieldset>
     </form>
   </div>
 
 </body>
-
-
 </html>
