@@ -112,6 +112,15 @@ input {
 /* 11 */
 input[type="checkbox"] {
   accent-color: var(--primary-color);
+  width: 20px;
+  height: 20px;
+}
+
+/* 10 */
+.field-block-remember {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /* 10 */
@@ -124,7 +133,7 @@ input[type="checkbox"] {
 .btn-wrap > input {
   padding: 15px 20px;
   border-radius: 4px;
-  background:var(--primary-color);
+  background: var(--primary-color);
   color: var(--secondary-color);
   font-weight: 700;
   cursor: pointer;
