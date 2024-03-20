@@ -10,46 +10,55 @@
 
 <body>
 
-  <div class="wrapper">
+  <header class="header">
+    <div class="logo-wrap">
+      <a class="logo" href="#">
+        <img src="images/logo.svg" alt="logo">
+      </a>
+    </div>
+    <div class="menu-wrap">
+      <a href="#" class="menu__link active">SIGN UP</a>
+      <a href="#" class="menu__link">SIGN IN</a>
+      <a href="#" class="menu__link">SELECT YOUR CAR</a>
+    </div>
+  </header>
+  <div class="fields-wrapper">
     <form method="POST" action="https://fom.in.ua/echo">
       <fieldset>
         <legend>SIGN UP</legend>
         <div class="field-block">
           <label for="email">Email: </label>
           <input 
-          type="email" 
-          name="email" 
-          id="email" 
-          placeholder="example@gmail.com" 
-          required="required"
-          autocomplete="off" 
-          title="Введіть існуючу електронну адресу" 
-          pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" />
+            name="email" 
+            type="email" 
+            id="email" 
+            placeholder="example@gmail.com" 
+            required="required"
+            autocomplete="off" 
+            title="Введіть існуючу електронну адресу" 
+            pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" />
         </div>
         <div class="field-block">
           <label for="password">Password: </label>
           <input 
-            type="password" 
-            name="password" 
-            id="password" 
-            required="required"
-            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-            title="Пароль повинен містити хоча б одну велику та малу літери. &#013; Мінімальна довжина паролю 8 символів." />
+             type="password" 
+             name="password" 
+             id="password" 
+             required="required"
+             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+             title="Пароль повинен містити хоча б одну велику літеру, одну малу літеру та одну цифру. &#10; Мінімальна довжина паролю 8 символів." />
         </div>
         <div class="field-block-remember">
           <input 
-          type="checkbox" 
-          name="remember" 
-          id="remember" 
-          checked 
-          placeholder="example@gmail.com"
-          required="required" />
+             type="checkbox" 
+             name="remember" 
+             id="remember" 
+             checked 
+             required="required" />
           <label for="remember">Запам'ятати мене </label>
         </div>
         <div class="btn-wrap">
-          <input 
-          type="submit" 
-          value="SIGN UP" />
+          <input type="submit" value="SIGN UP" />
         </div>
       </fieldset>
     </form>
