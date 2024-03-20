@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>SELECT YOUR CAR</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo-wrap">
+      <a class="logo" href="#">
+        <img src="images/logo.svg" alt="logo">
+      </a>
+    </div>
+    <div class="menu-wrap">
+      <a href="signup.html" class="menu__link">SIGN UP</a>
+      <a href="signin.html" class="menu__link">SIGN IN</a>
+      <a href="#" class="menu__link active">SELECT YOUR CAR</a>
+    </div>
+  </header>
+  <main class="main">
+    <form class="search" method="POST" action="https://fom.in.ua/echo">
+      <h1>Розширений пошук авто</h1>
+      <div class="search__block">
+        <p class="search__block-heading">Тип кузова:</p>
+        <div class="search__block-item">
+          <div class="search__block-info">
+            <input type="checkbox" id="station_wagon" name="station_wagon" />
+            <label for="station_wagon">Універсал</label>
+          </div>
+          <div class="search__block-info">
+            <input type="checkbox" id="sedan" name="sedan" />
+            <label for="sedan">Седан</label>
+          </div>
+          <div class="search__block-info">
+            <input type="checkbox" id="hatchback" name="hatchback" />
+            <label for="hatchback">Хетчбек</label>
+          </div>
+          <div class="search__block-info">
+            <input type="checkbox" id="SUV" name="SUV" />
+            <label for="SUV">Позашляховик/Кросовер</label>
+          </div>
+          <div class="search__block-info">
+            <input type="checkbox" id="coupe" name="coupe" />
+            <label for="coupe">Купе</label>
+          </div>
+          <div class="search__block-info">
+            <input type="checkbox" id="cabriolet" name="cabriolet" />
+            <label for="cabriolet">Кабріолет</label>
+          </div>
+        </div>
+      </div>
+      <div class="btn-wrap">
+        <input type="submit" value="ПОШУК" />
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>

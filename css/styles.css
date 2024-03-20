@@ -139,3 +139,51 @@ input[type="checkbox"] {
   cursor: pointer;
   width: 100%;
 }
+
+/* 10 */
+.main {
+  width: 90%;
+  margin: 20px auto;
+}
+
+/* 1 */
+h1 {
+  color: var(--primary-color);
+}
+
+/* 10 */
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  border: 2px solid var(--primary-color);
+  padding: 20px 50px;
+}
+
+/* 10 */
+.search__block {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 30px;
+  font-size: 1.2rem;
+}
+
+/* 10 */
+.search__block-heading {
+  margin: 0;
+  width: 30%;
+}
+
+/* 10 */
+.search__block-item {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+/* 10 */
+.search__block-info {
+  width: 30%;
+}
