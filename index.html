@@ -25,7 +25,7 @@
     <form class="search" method="POST" action="https://fom.in.ua/echo">
       <h1>Розширений пошук авто</h1>
       <div class="search__block">
-        <p class="search__block-heading">Тип кузова</p>
+        <h3 class="search__block-heading">Тип кузова</h3>
         <div class="search__block-item">
           <div class="search__block-info">
             <input type="checkbox" id="station_wagon" name="station_wagon" />
@@ -53,8 +53,9 @@
           </div>
         </div>
       </div>
+      <hr>
       <div class="search__block">
-        <p class="search__block-heading">Країна виробник</p>
+        <h3 class="search__block-heading">Країна виробник</h3>
         <div class="search__block-item">
           <select class="modify" name="country">
             <option value="" disabled selected>Оберіть країну</option>
@@ -74,8 +75,9 @@
           </select>
         </div>
       </div>
+      <hr>
       <div class="search__block">
-        <p class="search__block-heading">Марка авто, рік</p>
+        <h3 class="search__block-heading">Марка авто, рік</h3>
         <div class="search__block-item">
           <select class="modify" name="brand">
             <option value="" disabled selected>Оберіть марку</option>
@@ -136,8 +138,9 @@
           </select>
         </div>
       </div>
+      <hr>
       <div class="search__block">
-        <p class="search__block-heading">Вартість</p>
+        <h3 class="search__block-heading">Вартість</h3>
         <div class="search__block-item">
           <input type="number" name="price_from" placeholder="Від" />
           <input type="number" name="price_to" placeholder="До" />
@@ -149,6 +152,62 @@
           </select>
         </div>
       </div>
+      <hr>
+      <div class="search__block">
+        <h3 class="search__block-heading">Стан авто</h3>
+        <div class="search__block-item">
+          <select multiple="multiple" class="modify" name="condition">
+            <option value="accident">Був у ДТП</option>
+            <option value="undamaged">Повністю непошкоджене</option>
+            <option value="repaired">Професійно відремонтовані пошкодження</option>
+            <option value="damaged">Не відремонтовані пошкодження</option>
+            <option value="uncleared">Нерозмитнене</option>
+            <option value="credit">В кредиті</option>
+          </select>
+        </div>
+      </div>
+      <hr>
+      <div class="search__block">
+        <h3 class="search__block-heading">Тип палива</h3>
+        <div class="search__block-item">
+          <div class="search__block-info">
+            <input type="checkbox" id="petrol" name="petrol" />
+            <label for="petrol">Бензин</label>
+          </div>
+          <div class="search__block-info">
+            <input type="checkbox" id="gas" name="gas" />
+            <label for="gas">Газ</label>
+          </div>
+          <div class="search__block-info">
+            <input type="checkbox" id="diesel" name="diesel" />
+            <label for="diesel">Дизель</label>
+          </div>
+          <div class="search__block-info">
+            <input type="checkbox" id="electro" name="electro" />
+            <label for="electro">Електро</label>
+          </div>
+          <div class="search__block-info">
+            <input type="checkbox" id="propane_butane" name="propane_butane" />
+            <label for="propane_butane">Газ пропан-бутан</label>
+          </div>
+          <div class="search__block-info">
+            <input type="checkbox" id="hybrid" name="hybrid" />
+            <label for="hybrid">Гібрид</label>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="search__block">
+        <h3 class="search__block-heading">КПП</h3>
+        <div class="search__block-item">
+          <input type="radio" name="transmission" value="mechanics" /> Механіка
+          <input type="radio" name="transmission" value="automatic" /> Автомат
+          <input type="radio" name="transmission" value="tiptronic" /> Типтронік
+          <input type="radio" name="transmission" value="robot" /> Робот
+          <input type="radio" name="transmission" value="variator" /> Варіатор
+        </div>
+      </div>
+      <hr>
       <div class="btn-wrap">
         <input type="submit" value="ПОШУК" />
       </div>
