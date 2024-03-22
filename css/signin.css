@@ -1,0 +1,20 @@
+/* 10 */
+.fields-wrapper {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* 10 */
+.field-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* 10 */
+.field-block-remember {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
