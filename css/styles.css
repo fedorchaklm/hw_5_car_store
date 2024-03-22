@@ -88,8 +88,10 @@ a:hover {
   justify-content: center;
 }
 
-/* 1 */
-fieldset {
+/* 10 */
+.signin__fields,
+/* 10 */
+.signup__fields {
   width: 400px;
   padding: 40px;
   display: flex;
@@ -167,14 +169,6 @@ input[type="checkbox"] {
   gap: 20px;
   width: 90%;
   margin: 20px auto;
-}
-
-/* 1 */
-h1 {
-  font-size: 2rem;
-  color: var(--primary-color);
-  font-weight: 800;
-  margin-bottom: 30px;
 }
 
 /* 10 */
