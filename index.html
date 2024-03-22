@@ -57,7 +57,7 @@
       <div class="search__block">
         <h3 class="search__block-heading">Країна виробник</h3>
         <div class="search__block-item">
-          <select class="modify" name="country">
+          <select class="item__field" name="country">
             <option value="" disabled selected>Оберіть країну</option>
             <option value="Germany">Німеччина</option>
             <option value="Japan">Японія</option>
@@ -79,7 +79,7 @@
       <div class="search__block">
         <h3 class="search__block-heading">Марка авто, рік</h3>
         <div class="search__block-item">
-          <select class="modify" name="brand">
+          <select class="item__field" name="brand">
             <option value="" disabled selected>Оберіть марку</option>
             <option value="audi">Audi</option>
             <option value="chevrolet">Chevrolet</option>
@@ -98,7 +98,7 @@
             <option value="toyota">Toyota</option>
             <option value="other">Інше</option>
           </select>
-          <select class="modify" name="year_from">
+          <select class="item__field" name="year_from">
             <option value="" disabled selected>Рік, від</option>
             <option value="2024">2024</option>
             <option value="2023">2023</option>
@@ -117,7 +117,7 @@
             <option value="2010">2010</option>
             <option value="other">Інше</option>
           </select>
-          <select class="modify" name="year_to">
+          <select class="item__field" name="year_to">
             <option value="" disabled selected>Рік, до</option>
             <option value="2024">2024</option>
             <option value="2023">2023</option>
@@ -145,7 +145,7 @@
           <input type="number" name="price_from" placeholder="Від" />
           <input type="number" name="price_to" placeholder="До" />
 
-          <select class="modify" name="currency">
+          <select class="item__field" name="currency">
             <option value="UAH" selected>грн.</option>
             <option value="USD">$</option>
             <option value="EUR">€</option>
@@ -156,7 +156,7 @@
       <div class="search__block">
         <h3 class="search__block-heading">Стан авто</h3>
         <div class="search__block-item">
-          <select multiple="multiple" class="modify" name="condition">
+          <select multiple="multiple" class="item__field" name="condition">
             <option value="accident">Був у ДТП</option>
             <option value="undamaged">Повністю непошкоджене</option>
             <option value="repaired">Професійно відремонтовані пошкодження</option>
@@ -208,6 +208,51 @@
         </div>
       </div>
       <hr>
+      <div class="search__block">
+        <h3 class="search__block-heading">Колір</h3>
+        <div class="search__block-item">
+          <input type="color" name="color" />
+        </div>
+      </div>
+      <hr>
+      <div class="search__block">
+        <h3 class="search__block-heading">Комфорт:</h3>
+      </div>
+      <div class="search__block">
+        <h3 class="search__block-heading">Матеріал салону</h3>
+        <div class="search__block-item">
+          <select class="item__field" name="material">
+            <option value="" disabled selected>Оберіть</option>
+            <option value="fabric">Тканина</option>
+            <option value="leather">Шкіра</option>
+            <option value="velur">Велюр</option>
+            <option value="mix">Комбінований</option>
+            <option value="artificial_leather">Штучна шкіра</option>
+          </select>
+        </div>
+      </div>
+      <div class="search__block">
+        <h3 class="search__block-heading">Підігрів сидінь</h3>
+        <div class="search__block-item">
+          <select class="item__field" name="seat_heating">
+            <option value="" disabled selected>Оберіть</option>
+            <option value="forward">Передні сидіння</option>
+            <option value="front_rear">Передні та задні сидіння</option>
+          </select>
+        </div>
+      </div>
+      <div class="search__block">
+        <h3 class="search__block-heading">Кондиціонер</h3>
+        <div class="search__block-item">
+          <select class="item__field" name="climate_control">
+            <option value="" disabled selected>Оберіть</option>
+            <option value="air_cooler">Кондиціонер</option>
+            <option value="one_zone">Клімат-контроль 1 зонний</option>
+            <option value="two_zone">Клімат-контроль 2 зонний</option>
+            <option value="multi_zone">Клімат-контроль багатозонний</option>
+          </select>
+        </div>
+      </div>
       <div class="btn-wrap">
         <input type="submit" value="ПОШУК" />
       </div>
