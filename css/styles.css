@@ -97,7 +97,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
   font-size: 1.2rem;
   border: 2px solid var(--primary-color);
   background-color: var(--secondary-color);
@@ -145,7 +145,7 @@ input[type="checkbox"] {
 /* 10 */
 .btn-wrap {
   display: flex;
-  justify-content: center;
+  gap: 30px;
   margin-top: 30px;
 }
 
@@ -179,7 +179,7 @@ input[type="checkbox"] {
   align-items: center;
   gap: 10px;
   border: 2px solid var(--primary-color);
-  padding: 20px 50px;
+  padding: 50px;
   background-color: var(--secondary-color);
 }
 
