@@ -8,12 +8,20 @@ html {
   font-size: 16px;
 }
 
+@font-face {
+  font-family: "Noto Serif Thin";
+  src: url(../fonts/NotoSerif-Italic.ttf);
+}
+
+@font-face {
+  font-family: "Noto Sans Display";
+  src: url(../fonts/NotoSansDisplay-Regular.ttf);
+}
+
 /* 1 */
 body {
-  font-size: 1rem;
-  line-height: 1;
   margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Noto Serif Thin", sans-serif;
 }
 
 /* 10 */
@@ -44,6 +52,12 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 50px;
+}
+
+/* 10 */
+.menu__link {
+  text-transform: uppercase;
+  font-family: "Noto Sans Display";
 }
 
 /* 11 */
@@ -109,6 +123,7 @@ select {
   padding: 10px;
   border: 2px solid var(--primary-color);
   font-size: 1.2rem;
+  font-family: "Noto Serif Thin";
 }
 
 /* 11 */
@@ -150,7 +165,10 @@ input[type="checkbox"] {
 
 /* 1 */
 h1 {
+  font-size: 2rem;
   color: var(--primary-color);
+  font-weight: 700;
+  margin: 20px 0;
 }
 
 /* 10 */
@@ -160,7 +178,7 @@ h1 {
   justify-content: center;
   gap: 10px;
   border: 2px solid var(--primary-color);
-  padding: 0 50px 20px;
+  padding: 20px 50px;
 }
 
 /* 10 */
@@ -203,6 +221,10 @@ h1 {
 /* 1 */
 hr {
   width: 100%;
+  display: block;
+  border-style: inset;
+  border-width: 1px;
+  margin: 1rem 0;
 }
 
 /* 11 */
@@ -221,4 +243,3 @@ input[type="color"] {
 input[type="radio"] {
   transform: scale(1.5);
 }
-

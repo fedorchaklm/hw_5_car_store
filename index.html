@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
-  <title>SELECT YOUR CAR</title>
+  <title>Пошук</title>
 </head>
 
 <body>
@@ -15,11 +16,17 @@
         <img src="images/logo.svg" alt="logo">
       </a>
     </div>
-    <div class="menu-wrap">
-      <a href="signup.html" class="menu__link">SIGN UP</a>
-      <a href="signin.html" class="menu__link">SIGN IN</a>
-      <a href="#" class="menu__link active">SELECT YOUR CAR</a>
-    </div>
+    <ul class="menu-wrap">
+      <li class="menu__item">
+        <a href="signup.html" class="menu__link">Реєстрація</a>
+      </li>
+      <li class="menu__item">
+        <a href="signin.html" class="menu__link">Вхід</a>
+      </li>
+      <li class="menu__item">
+        <a href="#" class="menu__link active"></a>
+      </li>
+    </ul>
   </header>
   <main class="main">
     <form class="search" method="POST" action="https://fom.in.ua/echo">
