@@ -1,7 +1,7 @@
 :root {
   --primary-color: rgb(7, 148, 242);
   --secondary-color: white;
-  --ternary-color: rgb(7, 148, 242, 0.25);
+  --ternary-color: rgb(7, 148, 242, 0.15);
 }
 
 /* 1 */
@@ -101,6 +101,7 @@ legend {
   font-weight: 800;
   font-size: 1.75rem;
   color: var(--primary-color);
+  margin: 0 auto;
 }
 
 /* 1 */
