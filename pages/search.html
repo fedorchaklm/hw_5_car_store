@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/search.css">
   <title>Пошук</title>
 </head>
 
@@ -14,7 +14,7 @@
   <header class="header">
     <div class="logo-wrap">
       <a class="logo" href="#">
-        <img src="images/logo.svg" alt="logo">
+        <img src="../images/logo.svg" alt="logo">
       </a>
     </div>
     <ul class="menu-wrap">
@@ -22,7 +22,7 @@
         <a href="signup.html" class="menu__link">Реєстрація</a>
       </li>
       <li class="menu__item">
-        <a href="signin.html" class="menu__link">Вхід</a>
+        <a href="../signin.html" class="menu__link">Вхід</a>
       </li>
       <li class="menu__item">
         <a href="#" class="menu__link active">Пошук</a>
@@ -153,7 +153,7 @@
           <div class="search__block-item">
             <input type="number" name="price_from" placeholder="Від" />
             <input type="number" name="price_to" placeholder="До" />
-  
+
             <select class="item__field" name="currency">
               <option value="uah" selected>грн.</option>
               <option value="usd">$</option>
@@ -221,6 +221,10 @@
           <h3 class="search__block-heading">Колір</h3>
           <div class="search__block-item">
             <input type="color" name="car_color" />
+            <div class="search__block-info">
+              <input type="checkbox" id="color_metallic" name="color_metallic" />
+              <label for="color_metallic">Металік</label>
+            </div>
           </div>
         </div>
         <hr>
@@ -270,7 +274,7 @@
     </form>
     <div class="products">
       <div class="products__item">
-        <img src="images/chevrolet.webp" alt="chevrolet" class="products__item-picture">
+        <img src="../images/chevrolet.png" alt="chevrolet" class="products__item-picture">
         <div class="products__item-info">
           <h3 class="products__item-heading">Chevrolet Malibu 2012</h3>
           <p class="products__item-description">
@@ -281,7 +285,7 @@
         </div>
       </div>
       <div class="products__item">
-        <img src="images/bmw.webp" alt="bmw" class="products__item-picture">
+        <img src="../images/bmw.png" alt="bmw" class="products__item-picture">
         <div class="products__item-info">
           <h3 class="products__item-heading">BMW 3 Series 2011</h3>
           <p class="products__item-description">
@@ -292,7 +296,7 @@
         </div>
       </div>
       <div class="products__item">
-        <img src="images/nissan_juke.webp" alt="nissan_juke" class="products__item-picture">
+        <img src="../images/nissan_juke.png" alt="nissan_juke" class="products__item-picture">
         <div class="products__item-info">
           <h3 class="products__item-heading">Nissan Juke 2012</h3>
           <p class="products__item-description">
@@ -303,7 +307,7 @@
         </div>
       </div>
       <div class="products__item">
-        <img src="images/skoda_octavia.webp" alt="skoda_octavia" class="products__item-picture">
+        <img src="../images/skoda_octavia.png" alt="skoda_octavia" class="products__item-picture">
         <div class="products__item-info">
           <h3 class="products__item-heading">Skoda Octavia 2007</h3>
           <p class="products__item-description">
@@ -314,7 +318,7 @@
         </div>
       </div>
       <div class="products__item">
-        <img src="images/mercedes-benz.webp" alt="mercedes_benz" class="products__item-picture">
+        <img src="../images/mercedes-benz.png" alt="mercedes_benz" class="products__item-picture">
         <div class="products__item-info">
           <h3 class="products__item-heading">Mercedes-Benz CLS-Class 2011</h3>
           <p class="products__item-description">
