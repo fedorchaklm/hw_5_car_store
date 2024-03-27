@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/common.css">
-  <link rel="stylesheet" href="../css/search.css">
+  <link rel="stylesheet" href="../css/styles.css">
   <title>Пошук</title>
 </head>
 
@@ -34,29 +33,29 @@
       <fieldset class="search">
         <legend>Розширений пошук авто </legend>
         <div class="search__block">
-          <h3 class="search__block-heading">Тип кузова</h3>
-          <div class="search__block-item">
-            <div class="search__block-info">
+          <h3 class="search__heading">Тип кузова</h3>
+          <div class="search__item">
+            <div class="search__info">
               <input type="checkbox" id="type_wagon" name="type_wagon" />
               <label for="type_wagon">Універсал</label>
             </div>
-            <div class="search__block-info">
+            <div class="search__info">
               <input type="checkbox" id="type_sedan" name="type_sedan" />
               <label for="type_sedan">Седан</label>
             </div>
-            <div class="search__block-info">
+            <div class="search__info">
               <input type="checkbox" id="type_hatchback" name="type_hatchback" />
               <label for="type_hatchback">Хетчбек</label>
             </div>
-            <div class="search__block-info">
+            <div class="search__info">
               <input type="checkbox" id="type_suv" name="type_suv" />
               <label for="type_suv">Кросовер</label>
             </div>
-            <div class="search__block-info">
+            <div class="search__info">
               <input type="checkbox" id="type_coupe" name="type_coupe" />
               <label for="type_coupe">Купе</label>
             </div>
-            <div class="search__block-info">
+            <div class="search__info">
               <input type="checkbox" id="type_cabriolet" name="type_cabriolet" />
               <label for="type_cabriolet">Кабріолет</label>
             </div>
@@ -64,8 +63,8 @@
         </div>
         <hr>
         <div class="search__block">
-          <h3 class="search__block-heading">Країна виробник</h3>
-          <div class="search__block-item">
+          <h3 class="search__heading">Країна виробник</h3>
+          <div class="search__item">
             <select class="item__field" name="country">
               <option value="" disabled selected>Оберіть країну</option>
               <option value="Germany">Німеччина</option>
@@ -86,8 +85,8 @@
         </div>
         <hr>
         <div class="search__block">
-          <h3 class="search__block-heading">Марка авто, рік</h3>
-          <div class="search__block-item">
+          <h3 class="search__heading">Марка авто, рік</h3>
+          <div class="search__item">
             <select class="item__field" name="brand">
               <option value="" disabled selected>Оберіть марку</option>
               <option value="audi">Audi</option>
@@ -149,8 +148,8 @@
         </div>
         <hr>
         <div class="search__block">
-          <h3 class="search__block-heading">Вартість</h3>
-          <div class="search__block-item">
+          <h3 class="search__heading">Вартість</h3>
+          <div class="search__item">
             <input type="number" name="price_from" placeholder="Від" />
             <input type="number" name="price_to" placeholder="До" />
 
@@ -163,8 +162,8 @@
         </div>
         <hr>
         <div class="search__block">
-          <h3 class="search__block-heading">Стан авто</h3>
-          <div class="search__block-item">
+          <h3 class="search__heading">Стан авто</h3>
+          <div class="search__item">
             <select multiple="multiple" class="item__field" name="conditions">
               <option value="accident">Був у ДТП</option>
               <option value="undamaged">Повністю непошкоджене</option>
@@ -177,29 +176,29 @@
         </div>
         <hr>
         <div class="search__block">
-          <h3 class="search__block-heading">Тип палива</h3>
-          <div class="search__block-item">
-            <div class="search__block-info">
+          <h3 class="search__heading">Тип палива</h3>
+          <div class="search__item">
+            <div class="search__info">
               <input type="checkbox" id="fuel_petrol" name="fuel_petrol" />
               <label for="fuel_petrol">Бензин</label>
             </div>
-            <div class="search__block-info">
+            <div class="search__info">
               <input type="checkbox" id="fuel_gas" name="fuel_gas" />
               <label for="fuel_gas">Газ</label>
             </div>
-            <div class="search__block-info">
+            <div class="search__info">
               <input type="checkbox" id="fuel_diesel" name="fuel_diesel" />
               <label for="fuel_diesel">Дизель</label>
             </div>
-            <div class="search__block-info">
+            <div class="search__info">
               <input type="checkbox" id="fuel_electro" name="fuel_electro" />
               <label for="fuel_electro">Електро</label>
             </div>
-            <div class="search__block-info">
+            <div class="search__info">
               <input type="checkbox" id="fuel_propane_butane" name="fuel_propane_butane" />
               <label for="fuel_propane_butane">Газ пропан-бутан</label>
             </div>
-            <div class="search__block-info">
+            <div class="search__info">
               <input type="checkbox" id="fuel_hybrid" name="fuel_hybrid" />
               <label for="fuel_hybrid">Гібрид</label>
             </div>
@@ -207,8 +206,8 @@
         </div>
         <hr>
         <div class="search__block">
-          <h3 class="search__block-heading">КПП</h3>
-          <div class="search__block-item">
+          <h3 class="search__heading">КПП</h3>
+          <div class="search__item">
             <input type="radio" name="transmission" value="mechanics" /> Механіка
             <input type="radio" name="transmission" value="automatic" /> Автомат
             <input type="radio" name="transmission" value="tiptronic" /> Типтронік
@@ -218,10 +217,10 @@
         </div>
         <hr>
         <div class="search__block">
-          <h3 class="search__block-heading">Колір</h3>
-          <div class="search__block-item">
+          <h3 class="search__heading">Колір</h3>
+          <div class="search__item">
             <input type="color" name="car_color" />
-            <div class="search__block-info">
+            <div class="search__info">
               <input type="checkbox" id="color_metallic" name="color_metallic" />
               <label for="color_metallic">Металік</label>
             </div>
@@ -229,11 +228,11 @@
         </div>
         <hr>
         <div class="search__block">
-          <h3 class="search__block-heading">Комфорт:</h3>
+          <h3 class="search__heading">Комфорт:</h3>
         </div>
         <div class="search__block">
-          <h3 class="search__block-heading">Матеріал салону</h3>
-          <div class="search__block-item">
+          <h3 class="search__heading">Матеріал салону</h3>
+          <div class="search__item">
             <select class="item__field" name="material">
               <option value="" disabled selected>Оберіть</option>
               <option value="fabric">Тканина</option>
@@ -245,8 +244,8 @@
           </div>
         </div>
         <div class="search__block">
-          <h3 class="search__block-heading">Підігрів сидінь</h3>
-          <div class="search__block-item">
+          <h3 class="search__heading">Підігрів сидінь</h3>
+          <div class="search__item">
             <select class="item__field" name="seat_heating">
               <option value="" disabled selected>Оберіть</option>
               <option value="forward">Передні сидіння</option>
@@ -255,8 +254,8 @@
           </div>
         </div>
         <div class="search__block">
-          <h3 class="search__block-heading">Кондиціонер</h3>
-          <div class="search__block-item">
+          <h3 class="search__heading">Кондиціонер</h3>
+          <div class="search__item">
             <select class="item__field" name="climate_control">
               <option value="" disabled selected>Оберіть</option>
               <option value="air_cooler">Кондиціонер</option>
@@ -275,57 +274,57 @@
     <div class="products">
       <div class="products__item">
         <img src="../images/chevrolet.png" alt="chevrolet" class="products__item-picture">
-        <div class="products__item-info">
-          <h3 class="products__item-heading">Chevrolet Malibu 2012</h3>
-          <p class="products__item-description">
+        <div class="products__info">
+          <h3 class="products__heading">Chevrolet Malibu 2012</h3>
+          <p class="products__description">
             <span class="price">6,999 $</span>
             310 тис.км
           </p>
-          <a class="products__item__link" href="#">Більше інформації</a>
+          <a class="products__link" href="#">Більше інформації</a>
         </div>
       </div>
       <div class="products__item">
         <img src="../images/bmw.png" alt="bmw" class="products__item-picture">
-        <div class="products__item-info">
-          <h3 class="products__item-heading">BMW 3 Series 2011</h3>
-          <p class="products__item-description">
+        <div class="products__info">
+          <h3 class="products__heading">BMW 3 Series 2011</h3>
+          <p class="products__description">
             <span class="price">7,000 $</span>
             300 тис.км
           </p>
-          <a class="products__item__link" href="#">Більше інформації</a>
+          <a class="products__link" href="#">Більше інформації</a>
         </div>
       </div>
       <div class="products__item">
         <img src="../images/nissan_juke.png" alt="nissan_juke" class="products__item-picture">
-        <div class="products__item-info">
-          <h3 class="products__item-heading">Nissan Juke 2012</h3>
-          <p class="products__item-description">
+        <div class="products__info">
+          <h3 class="products__heading">Nissan Juke 2012</h3>
+          <p class="products__description">
             <span class="price">6,500 $</span>
             88 тис.км
           </p>
-          <a class="products__item__link" href="#">Більше інформації</a>
+          <a class="products__link" href="#">Більше інформації</a>
         </div>
       </div>
       <div class="products__item">
         <img src="../images/skoda_octavia.png" alt="skoda_octavia" class="products__item-picture">
-        <div class="products__item-info">
-          <h3 class="products__item-heading">Skoda Octavia 2007</h3>
-          <p class="products__item-description">
+        <div class="products__info">
+          <h3 class="products__heading">Skoda Octavia 2007</h3>
+          <p class="products__description">
             <span class="price">7,000 $</span>
             224 тис.км
           </p>
-          <a class="products__item__link" href="#">Більше інформації</a>
+          <a class="products__link" href="#">Більше інформації</a>
         </div>
       </div>
       <div class="products__item">
         <img src="../images/mercedes-benz.png" alt="mercedes_benz" class="products__item-picture">
-        <div class="products__item-info">
-          <h3 class="products__item-heading">Mercedes-Benz CLS-Class 2011</h3>
-          <p class="products__item-description">
+        <div class="products__info">
+          <h3 class="products__heading">Mercedes-Benz CLS-Class 2011</h3>
+          <p class="products__description">
             <span class="price">19,000 $</span>
             165 тис.км
           </p>
-          <a class="products__item__link" href="#">Більше інформації</a>
+          <a class="products__link" href="#">Більше інформації</a>
         </div>
       </div>
     </div>
